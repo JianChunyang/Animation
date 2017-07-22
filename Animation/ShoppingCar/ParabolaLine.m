@@ -8,8 +8,6 @@
 
 #import "ParabolaLine.h"
 
-
-
 static ParabolaLine *parabola;
 
 @interface ParabolaLine () <CAAnimationDelegate>
@@ -28,7 +26,6 @@ static ParabolaLine *parabola;
 
 + (ParabolaLine *)sharedInstence
 {
-    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
        parabola = [[ParabolaLine alloc] init];
@@ -85,41 +82,34 @@ static ParabolaLine *parabola;
 - (void)groupAnimation:(UIBezierPath *)path rotation:(BOOL)isRotation endScale:(CGFloat)endScale animationDuration:(CFTimeInterval)animationDuration
 {
     CAKeyframeAnimation *keyFrameAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-        keyFrameAnimation.path = path.CGPath;
-        keyFrameAnimation.rotationMode = kCAAnimationRotateAuto;
+    keyFrameAnimation.path = path.CGPath;
+    keyFrameAnimation.rotationMode = kCAAnimationRotateAuto;
 
+    CABasicAnimation *scaleBaseAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    scaleBaseAnimation.fromValue = [NSNumber numberWithFloat:1.0f];
+    scaleBaseAnimation.toValue = [NSNumber numberWithFloat:endScale];
+    scaleBaseAnimation.duration = animationDuration;
+    scaleBaseAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
 
-    
-        CABasicAnimation *scaleBaseAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-        scaleBaseAnimation.fromValue = [NSNumber numberWithFloat:1.0f];
-        scaleBaseAnimation.toValue = [NSNumber numberWithFloat:endScale];
-        scaleBaseAnimation.duration = animationDuration;
-        scaleBaseAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-    
-    
-        CABasicAnimation *rotationBaseAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-        rotationBaseAnimation.duration = animationDuration;
-        rotationBaseAnimation.toValue = [NSNumber numberWithFloat:M_PI * 2.0f];
-        rotationBaseAnimation.duration = 0.3f;
-        rotationBaseAnimation.cumulative = YES;
-        rotationBaseAnimation.repeatCount = animationDuration / 0.3f;
-        
+    CABasicAnimation *rotationBaseAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationBaseAnimation.duration = animationDuration;
+    rotationBaseAnimation.toValue = [NSNumber numberWithFloat:M_PI * 2.0f];
+    rotationBaseAnimation.duration = 0.3f;
+    rotationBaseAnimation.cumulative = YES;
+    rotationBaseAnimation.repeatCount = animationDuration / 0.3f;
 
-        CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
-        if (isRotation) {
-            [animationGroup setAnimations:@[keyFrameAnimation, rotationBaseAnimation, scaleBaseAnimation]];
-        } else {
-            [animationGroup setAnimations:@[keyFrameAnimation, scaleBaseAnimation]];
-        }
-    
-        animationGroup.duration = animationDuration;
-        animationGroup.removedOnCompletion = NO;
-        animationGroup.fillMode = kCAFillModeForwards;
-        animationGroup.delegate = self;
-        [self.throwWiew.layer addAnimation:animationGroup forKey:@"group"];
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    if (isRotation) {
+        [animationGroup setAnimations:@[keyFrameAnimation, rotationBaseAnimation, scaleBaseAnimation]];
+    } else {
+        [animationGroup setAnimations:@[keyFrameAnimation, scaleBaseAnimation]];
+    }
 
-    
-    
+    animationGroup.duration = animationDuration;
+    animationGroup.removedOnCompletion = NO;
+    animationGroup.fillMode = kCAFillModeForwards;
+    animationGroup.delegate = self;
+    [self.throwWiew.layer addAnimation:animationGroup forKey:@"group"];
 }
 
 #pragma mark - animationDelegate
