@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		340625D91F20C4D800D47E23 /* customFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 340625D81F20C4D800D47E23 /* customFont.ttf */; };
-		340625DB1F20C94100D47E23 /* xcode.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 340625DA1F20C94100D47E23 /* xcode.jpg */; };
+		3406272D1F23934700D47E23 /* ParabolaLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406272C1F23934700D47E23 /* ParabolaLine.m */; };
 		344842411F20B5A8002B4BD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 344842401F20B5A8002B4BD0 /* main.m */; };
 		344842441F20B5A8002B4BD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 344842431F20B5A8002B4BD0 /* AppDelegate.m */; };
 		344842471F20B5A8002B4BD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344842461F20B5A8002B4BD0 /* ViewController.m */; };
@@ -38,7 +38,8 @@
 
 /* Begin PBXFileReference section */
 		340625D81F20C4D800D47E23 /* customFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = customFont.ttf; sourceTree = "<group>"; };
-		340625DA1F20C94100D47E23 /* xcode.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xcode.jpg; sourceTree = "<group>"; };
+		3406272B1F23934700D47E23 /* ParabolaLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParabolaLine.h; sourceTree = "<group>"; };
+		3406272C1F23934700D47E23 /* ParabolaLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParabolaLine.m; sourceTree = "<group>"; };
 		3448423C1F20B5A8002B4BD0 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344842401F20B5A8002B4BD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		344842421F20B5A8002B4BD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3406272A1F23921B00D47E23 /* ShoppingCar */ = {
+			isa = PBXGroup;
+			children = (
+				3406272B1F23934700D47E23 /* ParabolaLine.h */,
+				3406272C1F23934700D47E23 /* ParabolaLine.m */,
+			);
+			path = ShoppingCar;
+			sourceTree = "<group>";
+		};
 		344842331F20B5A8002B4BD0 = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +115,7 @@
 		3448423E1F20B5A8002B4BD0 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				340625DA1F20C94100D47E23 /* xcode.jpg */,
+				3406272A1F23921B00D47E23 /* ShoppingCar */,
 				340625D81F20C4D800D47E23 /* customFont.ttf */,
 				344842421F20B5A8002B4BD0 /* AppDelegate.h */,
 				344842431F20B5A8002B4BD0 /* AppDelegate.m */,
@@ -253,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				340625D91F20C4D800D47E23 /* customFont.ttf in Resources */,
-				340625DB1F20C94100D47E23 /* xcode.jpg in Resources */,
 				3448424F1F20B5A8002B4BD0 /* LaunchScreen.storyboard in Resources */,
 				3448424C1F20B5A8002B4BD0 /* Assets.xcassets in Resources */,
 				3448424A1F20B5A8002B4BD0 /* Main.storyboard in Resources */,
@@ -284,6 +293,7 @@
 				344842471F20B5A8002B4BD0 /* ViewController.m in Sources */,
 				344842441F20B5A8002B4BD0 /* AppDelegate.m in Sources */,
 				344842411F20B5A8002B4BD0 /* main.m in Sources */,
+				3406272D1F23934700D47E23 /* ParabolaLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
