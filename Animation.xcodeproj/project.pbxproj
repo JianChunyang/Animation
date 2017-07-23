@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		340625D91F20C4D800D47E23 /* customFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 340625D81F20C4D800D47E23 /* customFont.ttf */; };
 		3406272D1F23934700D47E23 /* ParabolaLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406272C1F23934700D47E23 /* ParabolaLine.m */; };
+		340627341F24348A00D47E23 /* BasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340627331F24348A00D47E23 /* BasicAnimationViewController.m */; };
+		340627371F2434A400D47E23 /* GroupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340627361F2434A400D47E23 /* GroupAnimationViewController.m */; };
+		3406273A1F2434B500D47E23 /* KeyFrameAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340627391F2434B500D47E23 /* KeyFrameAnimationViewController.m */; };
+		3406273D1F2434CE00D47E23 /* TransitionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406273C1F2434CE00D47E23 /* TransitionAnimationViewController.m */; };
 		344842411F20B5A8002B4BD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 344842401F20B5A8002B4BD0 /* main.m */; };
 		344842441F20B5A8002B4BD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 344842431F20B5A8002B4BD0 /* AppDelegate.m */; };
 		344842471F20B5A8002B4BD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344842461F20B5A8002B4BD0 /* ViewController.m */; };
-		3448424A1F20B5A8002B4BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344842481F20B5A8002B4BD0 /* Main.storyboard */; };
 		3448424C1F20B5A8002B4BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3448424B1F20B5A8002B4BD0 /* Assets.xcassets */; };
 		3448424F1F20B5A8002B4BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3448424D1F20B5A8002B4BD0 /* LaunchScreen.storyboard */; };
 		3448425A1F20B5A9002B4BD0 /* AnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 344842591F20B5A9002B4BD0 /* AnimationTests.m */; };
@@ -40,13 +43,20 @@
 		340625D81F20C4D800D47E23 /* customFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = customFont.ttf; sourceTree = "<group>"; };
 		3406272B1F23934700D47E23 /* ParabolaLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParabolaLine.h; sourceTree = "<group>"; };
 		3406272C1F23934700D47E23 /* ParabolaLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParabolaLine.m; sourceTree = "<group>"; };
+		340627321F24348A00D47E23 /* BasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimationViewController.h; sourceTree = "<group>"; };
+		340627331F24348A00D47E23 /* BasicAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationViewController.m; sourceTree = "<group>"; };
+		340627351F2434A400D47E23 /* GroupAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAnimationViewController.h; sourceTree = "<group>"; };
+		340627361F2434A400D47E23 /* GroupAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupAnimationViewController.m; sourceTree = "<group>"; };
+		340627381F2434B500D47E23 /* KeyFrameAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyFrameAnimationViewController.h; sourceTree = "<group>"; };
+		340627391F2434B500D47E23 /* KeyFrameAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyFrameAnimationViewController.m; sourceTree = "<group>"; };
+		3406273B1F2434CE00D47E23 /* TransitionAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationViewController.h; sourceTree = "<group>"; };
+		3406273C1F2434CE00D47E23 /* TransitionAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationViewController.m; sourceTree = "<group>"; };
 		3448423C1F20B5A8002B4BD0 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344842401F20B5A8002B4BD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		344842421F20B5A8002B4BD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		344842431F20B5A8002B4BD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		344842451F20B5A8002B4BD0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		344842461F20B5A8002B4BD0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		344842491F20B5A8002B4BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3448424B1F20B5A8002B4BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3448424E1F20B5A8002B4BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		344842501F20B5A8002B4BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +102,42 @@
 			path = ShoppingCar;
 			sourceTree = "<group>";
 		};
+		3406272E1F24345D00D47E23 /* basic */ = {
+			isa = PBXGroup;
+			children = (
+				340627321F24348A00D47E23 /* BasicAnimationViewController.h */,
+				340627331F24348A00D47E23 /* BasicAnimationViewController.m */,
+			);
+			path = basic;
+			sourceTree = "<group>";
+		};
+		3406272F1F24345D00D47E23 /* groups */ = {
+			isa = PBXGroup;
+			children = (
+				340627351F2434A400D47E23 /* GroupAnimationViewController.h */,
+				340627361F2434A400D47E23 /* GroupAnimationViewController.m */,
+			);
+			path = groups;
+			sourceTree = "<group>";
+		};
+		340627301F24345D00D47E23 /* keyframe */ = {
+			isa = PBXGroup;
+			children = (
+				340627381F2434B500D47E23 /* KeyFrameAnimationViewController.h */,
+				340627391F2434B500D47E23 /* KeyFrameAnimationViewController.m */,
+			);
+			path = keyframe;
+			sourceTree = "<group>";
+		};
+		340627311F24345D00D47E23 /* transition */ = {
+			isa = PBXGroup;
+			children = (
+				3406273B1F2434CE00D47E23 /* TransitionAnimationViewController.h */,
+				3406273C1F2434CE00D47E23 /* TransitionAnimationViewController.m */,
+			);
+			path = transition;
+			sourceTree = "<group>";
+		};
 		344842331F20B5A8002B4BD0 = {
 			isa = PBXGroup;
 			children = (
@@ -115,13 +161,16 @@
 		3448423E1F20B5A8002B4BD0 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				3406272E1F24345D00D47E23 /* basic */,
+				3406272F1F24345D00D47E23 /* groups */,
+				340627301F24345D00D47E23 /* keyframe */,
+				340627311F24345D00D47E23 /* transition */,
 				3406272A1F23921B00D47E23 /* ShoppingCar */,
 				340625D81F20C4D800D47E23 /* customFont.ttf */,
 				344842421F20B5A8002B4BD0 /* AppDelegate.h */,
 				344842431F20B5A8002B4BD0 /* AppDelegate.m */,
 				344842451F20B5A8002B4BD0 /* ViewController.h */,
 				344842461F20B5A8002B4BD0 /* ViewController.m */,
-				344842481F20B5A8002B4BD0 /* Main.storyboard */,
 				3448424B1F20B5A8002B4BD0 /* Assets.xcassets */,
 				3448424D1F20B5A8002B4BD0 /* LaunchScreen.storyboard */,
 				344842501F20B5A8002B4BD0 /* Info.plist */,
@@ -265,7 +314,6 @@
 				340625D91F20C4D800D47E23 /* customFont.ttf in Resources */,
 				3448424F1F20B5A8002B4BD0 /* LaunchScreen.storyboard in Resources */,
 				3448424C1F20B5A8002B4BD0 /* Assets.xcassets in Resources */,
-				3448424A1F20B5A8002B4BD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +338,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3406273D1F2434CE00D47E23 /* TransitionAnimationViewController.m in Sources */,
 				344842471F20B5A8002B4BD0 /* ViewController.m in Sources */,
 				344842441F20B5A8002B4BD0 /* AppDelegate.m in Sources */,
+				3406273A1F2434B500D47E23 /* KeyFrameAnimationViewController.m in Sources */,
+				340627341F24348A00D47E23 /* BasicAnimationViewController.m in Sources */,
+				340627371F2434A400D47E23 /* GroupAnimationViewController.m in Sources */,
 				344842411F20B5A8002B4BD0 /* main.m in Sources */,
 				3406272D1F23934700D47E23 /* ParabolaLine.m in Sources */,
 			);
@@ -329,14 +381,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		344842481F20B5A8002B4BD0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				344842491F20B5A8002B4BD0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3448424D1F20B5A8002B4BD0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
